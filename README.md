@@ -3,4 +3,4 @@
 
 ## 展示
 
-[在线地址](www.cuteximi.com/resume)
+[在线地址](http://www.cuteximi.com/resume)
