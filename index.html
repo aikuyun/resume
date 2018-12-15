@@ -1,0 +1,250 @@
+<html class="cssanimations wf-proximanova-n3-active wf-proximanovasoft-n4-active wf-proximanovasoft-n6-active wf-active">
+
+
+<head>
+	<title>Chart.js | Open source HTML5 Charts for your website</title>
+	<meta name="description" content="Simple, clean and engaging HTML5 based JavaScript charts. Chart.js is an easy way to include animated, interactive graphs on your website for free.">
+
+	<link rel="icon" href="./favicon.ico">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script src="./Chart.bundle.js"></script>
+
+	<style type="text/css">
+		@font-face {
+			font-family: proxima-nova;
+			src: url(https://use.typekit.net/af/3333ef/00000000000000003b9ad1b5/27/l?primer=7ceb210e49ade74e23101e10f006f110a0b6588c7c57777a6e3d98a38b749696&fvd=n3&v=3) format("woff2"), url(https://use.typekit.net/af/3333ef/00000000000000003b9ad1b5/27/d?primer=7ceb210e49ade74e23101e10f006f110a0b6588c7c57777a6e3d98a38b749696&fvd=n3&v=3) format("woff"), url(https://use.typekit.net/af/3333ef/00000000000000003b9ad1b5/27/a?primer=7ceb210e49ade74e23101e10f006f110a0b6588c7c57777a6e3d98a38b749696&fvd=n3&v=3) format("opentype");
+			font-weight: 300;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: proxima-nova-soft;
+			src: url(https://use.typekit.net/af/357d3c/00000000000000000001743c/27/l?primer=7ceb210e49ade74e23101e10f006f110a0b6588c7c57777a6e3d98a38b749696&fvd=n4&v=3) format("woff2"), url(https://use.typekit.net/af/357d3c/00000000000000000001743c/27/d?primer=7ceb210e49ade74e23101e10f006f110a0b6588c7c57777a6e3d98a38b749696&fvd=n4&v=3) format("woff"), url(https://use.typekit.net/af/357d3c/00000000000000000001743c/27/a?primer=7ceb210e49ade74e23101e10f006f110a0b6588c7c57777a6e3d98a38b749696&fvd=n4&v=3) format("opentype");
+			font-weight: 400;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: proxima-nova-soft;
+			src: url(https://use.typekit.net/af/8d1d7e/00000000000000000001743e/27/l?primer=7ceb210e49ade74e23101e10f006f110a0b6588c7c57777a6e3d98a38b749696&fvd=n6&v=3) format("woff2"), url(https://use.typekit.net/af/8d1d7e/00000000000000000001743e/27/d?primer=7ceb210e49ade74e23101e10f006f110a0b6588c7c57777a6e3d98a38b749696&fvd=n6&v=3) format("woff"), url(https://use.typekit.net/af/8d1d7e/00000000000000000001743e/27/a?primer=7ceb210e49ade74e23101e10f006f110a0b6588c7c57777a6e3d98a38b749696&fvd=n6&v=3) format("opentype");
+			font-weight: 600;
+			font-style: normal;
+		}
+	</style>
+
+</head>
+
+
+<body class="homepage" style="position: static;">
+
+	<div class="content-overlay fade-in-up animation-delay__1">
+		<div class="hero-container">
+			<img class="chart-logo fade-in animation-delay__3" width="50px" height="50px" src="./cuteximi.jpg">
+			<div class="fade-in fade-in animation-delay__5">
+				<h1 class="hero-title">大数据开发者</h1>
+				<h2 class="hero-subtitle">爱技术，爱钻研！</h2>
+			</div>
+			<div class="hero-button-wrapper fade-in animation-delay__6">
+				<a class="button button__red" href="">项目技术栈</a>
+				<a class="button button__blue" href="https://ziyuan.cuteximi.com">个人文档平台</a>
+				<a class="button button__black" href="https://github.com/aikuyun" target="_blank">GitHub</a>
+			</div>
+		</div>
+		<hr>
+		<hr>
+		<div class="feature-container fade-in animation-delay__7">
+			<div class="feature">
+				<div class="feature-text">
+					<h3 class="subtitle">
+						<span class="pill pill__new">语言技术栈</span>
+						编程之路
+					</h3>
+					<p class="description">12年接触 java , 14年接触 python,15年接触 scala ...</p>
+				</div>
+				<div class="feature-chart feature-chart__right"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="display: block; overflow: hidden; border: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;"></iframe>
+					<canvas id="myChart" height="426" width="640" style="display: block; height: 213px; width: 320px;"></canvas>
+				</div>
+			</div>
+			<div class="feature">
+				<div class="feature-text feature-text__pull-right">
+					<h3 class="subtitle">
+						<span class="pill pill__new">大数据技能</span>
+						技术驱动价值
+					</h3>
+					<p class="description">Hadoop 生态 、Spark 生态、SQL 、机器学习、统计学。</p>
+				</div>
+				<div class="feature-chart feature-chart__left feature-chart__pull-right"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="display: block; overflow: hidden; border: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;"></iframe>
+					<canvas id="chart-area" height="426" width="640" style="display: block; height: 213px; width: 320px;"></canvas>
+				</div>
+			</div>
+			<div class="feature">
+				<div class="feature-text">
+					<h3 class="subtitle">
+						<span class="pill pill__new">挖掘价值</span>
+						业务为首要，计算为核心
+					</h3>
+					<p class="description">在海量的数据中翱翔，一切都是为了无法计算的价值。</p>
+				</div>
+				<div class="feature-chart feature-chart__right"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="display: block; overflow: hidden; border: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;"></iframe>
+					<canvas id="animate-chart" height="426" width="640" style="display: block; height: 213px; width: 320px;"></canvas>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<hr>
+		<div class="feature-small-container fade-in animation-delay__7">
+			<div class="feature-small">
+				<div class="feature-icon">
+					<img src="./spark-logo.png" width="50px" height="50px">
+				</div>
+				<h4 class="subtitle subtitle__small">Open source</h4>
+				<p class="description description__small">Chart.js is a community maintained project, contributions welcome!</p>
+			</div>
+			<div class="feature-small">
+				<div class="feature-icon">
+					<img src="./hive_logo.jpg" width="50px" height="50px">
+				</div>
+				<h4 class="subtitle subtitle__small">8 Chart types</h4>
+				<p class="description description__small">Visualize your data in 8 different ways; each of them animated and customisable.</p>
+			</div>
+			<div class="feature-small">
+				<div class="feature-icon">
+					<img src="./img/canvas-icon.svg">
+				</div>
+				<h4 class="subtitle subtitle__small">HTML5 Canvas</h4>
+				<p class="description description__small">Great rendering performance across all modern browsers (IE9+).</p>
+			</div>
+			<div class="feature-small">
+				<div class="feature-icon">
+					<img src="./img/responsive.svg">
+				</div>
+				<h4 class="subtitle subtitle__small">Responsive</h4>
+				<p class="description description__small">Redraws charts on window resize for perfect scale granularity.</p>
+			</div>
+		</div>
+
+		<hr>
+		<div class="feature-small-container fade-in animation-delay__7">
+			<div class="feature-small">
+				<div class="feature-icon">
+					<img src="./spark-logo.png" width="50px" height="50px">
+				</div>
+				<h4 class="subtitle subtitle__small">Spark</h4>
+				<p class="description description__small">70%/p>
+			</div>
+			<div class="feature-small">
+				<div class="feature-icon">
+					<img src="./hive_logo.jpg" width="50px" height="50px">
+				</div>
+				<h4 class="subtitle subtitle__small">Hive</h4>
+				<p class="description description__small">80%</p>
+			</div>
+			<div class="feature-small">
+				<div class="feature-icon">
+					<img src="./img/canvas-icon.svg">
+				</div>
+				<h4 class="subtitle subtitle__small">HTML5 Canvas</h4>
+				<p class="description description__small">Great rendering performance across all modern browsers (IE9+).</p>
+			</div>
+			<div class="feature-small">
+				<div class="feature-icon">
+					<img src="./img/responsive.svg">
+				</div>
+				<h4 class="subtitle subtitle__small">Responsive</h4>
+				<p class="description description__small">Redraws charts on window resize for perfect scale granularity.</p>
+			</div>
+		</div>
+
+		<hr>
+
+	</div>
+
+	<footer class="fade-in animation-delay__8">
+		<div class="footer-logo">
+			<img src="./python.png">
+		</div>
+		<p class="footer-note">2016-2018 <a href="cuteximi.com" target="_blank">主页</a>
+
+		</p>
+	</footer>
+
+	<!--  第一个图-->
+	<script>
+		var ctx = document.getElementById("myChart").getContext('2d');
+		var myChart = new Chart(ctx, {
+			type: 'bar',
+			data: {
+				labels: ["Java", "Python", "Scala"],
+				datasets: [{
+					label: '熟悉程度',
+					data: [9, 10, 8],
+					backgroundColor: [
+						'rgba(255, 99, 132, 0.2)',
+						'rgba(54, 162, 235, 0.2)',
+						'rgba(255, 206, 86, 0.2)',
+						'rgba(75, 192, 192, 0.2)',
+						'rgba(153, 102, 255, 0.2)',
+						'rgba(255, 159, 64, 0.2)'
+					],
+					borderColor: [
+						'rgba(255,99,132,1)',
+						'rgba(54, 162, 235, 1)',
+						'rgba(255, 206, 86, 1)',
+						'rgba(75, 192, 192, 1)',
+						'rgba(153, 102, 255, 1)',
+						'rgba(255, 159, 64, 1)'
+					],
+					borderWidth: 3
+				}]
+			},
+			options: {
+				scales: {
+					yAxes: [{
+						ticks: {
+							beginAtZero: true
+						}
+					}]
+				}
+			}
+		});
+	</script>
+	<!-- 第二个图 -->
+	<script>
+		var config = {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [
+						9, 10, 10, 6, 8
+					],
+					backgroundColor: [
+						'rgba(255, 99, 132, 0.2)',
+						'rgba(54, 162, 235, 0.2)',
+						'rgba(255, 206, 86, 0.2)',
+						'rgba(75, 192, 192, 0.2)',
+						'rgba(153, 102, 255, 0.2)',
+						'rgba(255, 159, 64, 0.2)'
+					],
+					label: 'Dataset 1',
+				}],
+				labels: [
+					'Spark',
+					'Hive',
+					'Hadoop',
+					'ML',
+					'统计学'
+				]
+			},
+			options: {
+				responsive: true
+			}
+		};
+		var ctx = document.getElementById('chart-area').getContext('2d');
+		window.myPie = new Chart(ctx, config);
+	</script>
+	<!--  第三个-->
+	<script async src="./build.js"></script>
+
+</body>
+
+</html>
